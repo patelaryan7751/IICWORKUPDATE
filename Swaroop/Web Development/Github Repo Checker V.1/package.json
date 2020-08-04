@@ -1,0 +1,17 @@
+{
+  "name": "3.api-intro",
+  "version": "1.0.0",
+  "description": "This module deals with how to make Api requests to an external server from our server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "@alphaCoder69",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

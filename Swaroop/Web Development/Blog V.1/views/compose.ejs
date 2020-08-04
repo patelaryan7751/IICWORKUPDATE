@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+
+<style>
+    .button{
+         margin:3% 0 0 50%;
+         background-color:#508abb;
+         color:#fffafa;
+         border:3px solid #508abb;
+         letter-spacing:1px;
+         font-weight:600;
+         padding:0.5% 1.3%;
+         border-radius:100px;
+         width:10%;
+         transition:all 0.5s;
+    }
+.button:hover{
+    background-color:#fffafa;
+    color:black;
+}
+
+</style>
+<h1 style="margin-top:1%;">Compose</h1>
+
+<form action="/compose" method="post" style="margin-top:1%">
+    <label style="display:block; font-weight:600">Title :</label>
+    <input type="text" name="newTitle" required style="display:block;" autocomplete="off">
+    <label style="margin-top:1%; font-weight:600">Body:</label>
+    <textarea name="newBody" rows="8" cols="80" style="display:block;" required></textarea>
+    <button class="button" type="submit" name="button" style="outline:none;">Publish</button>
+</form>
+
+<%- include("partials/footer"); -%>

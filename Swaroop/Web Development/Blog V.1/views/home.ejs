@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+
+<h2 style="margin-top:1.5%">Home</h2>
+<p><%= Content %></p>
+
+<% addPost.forEach(function(ele) { %>
+    <h2><%= ele.postTitle %></h2>
+    <p style="display:inline-block;"><%= ele.postBody.substring(0,100) %><strong> ...</strong></p>
+    <!-- "element.substring(strt,end)" truncates the paragraph to a limit
+        of 100 words  -->
+        <a href="/posts/<%= ele.postTitle %>"  style="text-decoration:none;" >Read more</a>
+<% }) %>
+
+
+<%- include("partials/footer"); -%>
